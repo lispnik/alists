@@ -21,6 +21,6 @@ install:
   - curl -L https://github.com/luismbo/cl-travis/raw/master/install.sh | sh
 
 script:
-  - cl -e '(ql:quickload :alists-test)
+  - cl -e "(ql:quickload :alists-test)
            (unless (asdf:oos 'asdf:test-op :alists)
-             (uiop:quit 1))'
+             (uiop:quit 1))"
